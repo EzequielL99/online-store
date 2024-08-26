@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda online</title>
+    <link rel="preload" href="css/normalize.css" as="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- ----------------------------- GOOGLE FONT ----------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <div class="flex-logo">
+          <a href="index.html" class="header__logo">Logo</a>
+        </div>
+        <nav class="navegacion">
+          <a class="navegacion__enlace" href="index.html">Inicio</a>
+          <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        </nav>
+        <div class="flex-busqueda">
+          <a href="" class="header__btn">
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+              </svg>
+            </i>
+          </a>
+          <a href="" class="header__btn">
+            <i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pagina__producto">
+      <h1>Remera React JS</h1>
+      <div class="contenedor">
+        <div class="remera">
+          <img
+            class="remera__imagen"
+            src="img/1.jpg"
+            alt="Imagen del producto"
+          />
+          <div class="remera__contenido">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam fuga
+              quam qui a praesentium quos. Suscipit neque nulla labore
+              accusantium molestias. Ad doloribus illo eum! Minus, neque ipsa.
+              Saepe, laudantium.
+            </p>
+            <form class="formCantidad" action="#">
+              <select class="formulario__campo formulario__campo--select" name="selectTalle" id="selectTalle">
+                <option value="" disabled selected>Seleccionar talle</option>
+                <option value="">Chica</option>
+                <option value="">Mediana</option>
+                <option value="">Grande</option>
+              </select>
+
+              <input
+                class="formulario__campo" 
+                type="number"
+                id="inputCantidad"
+                value="1"
+                min="1"
+                required
+              />
+
+              <input type="submit" class="btn btn--primario formulario__submit" value="Agregar al carrito" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="footer__grid">
+          <div class="footer__empresa">
+            <a href="index.html" class="footer__logo">LOGO</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, iure harum ullam nobis optio expedita. Commodi
+              doloremque quod dolores nesciunt!
+            </p>
+            <div class="footer__redes">
+              <a href="" target="_blank">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    />
+                  </svg>
+                </i>
+              </a>
+              <a href="" target="_blank">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                  </svg>
+                </i>
+              </a>
+              <a href="" target="_blank">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                    />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__info">
+            <h3>Legales</h3>
+            <a href="">Términos de uso</a>
+            <a href="">Política de privacidad</a>
+            <a href="">Contacto</a>
+            <a href="">Newsletter</a>
+          </div>
+          <div class="footer__info">
+            <h3>Información</h3>
+            <a href="">FAQs</a>
+            <a href="">Nosotros</a>
+            <a href="">Medios de pago</a>
+            <a href="">Envíos</a>
+          </div>
+          <div class="footer__newsletter">
+            <h3>Nuestro newsletter</h3>
+            <p>
+              Suscríbete a nuestro newsletter para enterarte las últimas
+              novedades
+            </p>
+            <form action="#" method="post">
+              <input type="email" placeholder="Escribe tu correo" />
+              <input type="submit" class="btn btn-footer" value="Suscribirse" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
