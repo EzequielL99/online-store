@@ -9,6 +9,9 @@
   --gris: 90, 90, 90;
   --grisOscuro: 16, 16, 16;
 
+  --rojo: 219, 73, 73;
+  --rojoOscuro: 150, 24, 24;
+
   --fuentePrincipal: "Barlow Condensed", sans-serif;
 }
 
@@ -93,8 +96,8 @@ h3 {
   padding: 1rem 1.4rem;
 }
 
-.formulario__campo--select{
-    color: rgb(var(--primario));
+.formulario__campo--select {
+  color: rgb(var(--primario));
 }
 
 @media (min-width: 1024px) {
@@ -417,6 +420,95 @@ h3 {
   top: 1rem;
 }
 
+.producto__btn--favorito:hover svg {
+  fill: rgb(var(--primario));
+}
+
+/* --------------------------- CARRITO DE COMPRAS --------------------------- */
+.box__carrito {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.box__carrito:hover .carrito {
+  display: block;
+}
+
+.carrito {
+  display: none;
+  background-color: rgb(var(--gris));
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem;
+}
+
+.carrito__vacio {
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.carrito__tabla {
+  font-size: 1.4rem;
+}
+
+.carrito__tabla th {
+  color: rgb(var(--secundario));
+}
+
+.carrito__tabla th,
+td {
+  padding: 0.6rem;
+}
+
+.item__precio,
+.item__cantidad {
+  text-align: center;
+}
+
+.item__cantidad{
+  align-items: center;
+  display: flex;
+  gap: .2rem;
+  justify-content: center;
+}
+
+.carrito__total {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.btn__limpiar {
+  background-color: rgb(var(--negro));
+  border: none;
+  color: rgb(var(--blanco));
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.item__btn--eliminar {
+  border: none;
+  background-color: rgb(var(--rojo));
+  color: rgb(var(--blanco));
+  padding: 0.2rem 0.4rem;
+}
+
+.item__btn--eliminar:hover{
+  background-color: rgb(var(--rojoOscuro));
+}
+
+.item__btn--eliminar i {
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              PAGINA: NOSOTROS                              */
 /* -------------------------------------------------------------------------- */
@@ -463,7 +555,7 @@ h3 {
   margin: 6rem 0;
 }
 .section__motivos .contenedor {
-    column-gap: 4rem;
+  column-gap: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -503,7 +595,7 @@ h3 {
 
 @media (min-width: 1024px) {
   .remera {
-      column-gap: 3rem;
+    column-gap: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
